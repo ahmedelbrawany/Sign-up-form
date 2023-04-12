@@ -30,7 +30,7 @@ html{
     display: flex;
     width: 80%;
     height: 80%;
-    border: 20px solid rgba(181, 33, 218, 0.637);
+    border: 20px double rgba(181, 33, 218, 0.637);
     border-radius: 50%;
     background-color: black;
     align-items: center;
@@ -48,13 +48,17 @@ html{
 #sign-up-form{
     position: absolute;
     right: 30px;
-    width: 50%;
+    width: 55%;
     height: 95%;
     background: linear-gradient(20deg,cornflowerblue, purple, white);
     opacity: .9;
     border-radius: 1rem;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    justify-content: space-around;
 
 }
 
@@ -68,25 +72,100 @@ html{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 1rem;
 
 
 }
 
 
-input[type="text"]{
+input{
     height: 20px;
     border-radius: 1rem;
     border: none;
     outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-align: center;
+    background-color: rgb(208, 70, 235);
+    margin-left: 5px;
+}
+
+::placeholder{
+    color: white;
+    opacity: .5;
+}
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+input:hover{
+    transition: .3s ease;
+    border: 2px solid gold;
+    transform: scale(1.05);
+}
+
+#birth-date-container{
+    grid-column: 1/3;
 }
 
 #bd{
-    width: 60%;
+    width: 70%;
     height: 100%;
-    border-radius: 1rem;
-    border: none;
-    outline: none;
-    text-align: center;
+    
+}
+
+#address-container{
+    grid-column: 1/3;
+}
+
+#address{
+    width: 80%;
+    margin-left: 10px;
+}
+
+#email{
+    width: 80%;
+}
+
+
+#conf-pwd-container{
+    grid-column: 1/3;
+}
+
+#conf-pwd{
+    width: 75%;
+}
+
+#btn-container{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+
+}
+
+#signup-btn{
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 30%;
+    height: 40%;
+    background: linear-gradient(20deg, blue, purple, red);
+    opacity: .8;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#signup-btn:hover{
+    color: gold;
+    border-color: gold;
+    transition: .3s ease; 
+    transform: scale(1.1);
 }
 
 
