@@ -37,7 +37,8 @@ html{
     justify-content: center;
     box-sizing: border-box;
     transition: 2s ease;
-    opacity: .6;
+    opacity: .8;
+
 }
 
 .space-circle:hover{
@@ -66,6 +67,7 @@ html{
 .fieldset{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 
 
 }
@@ -76,6 +78,15 @@ input[type="text"]{
     border-radius: 1rem;
     border: none;
     outline: none;
+}
+
+#bd{
+    width: 60%;
+    height: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    text-align: center;
 }
 
 
