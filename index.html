@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="space-container">
@@ -13,12 +15,12 @@
                 <div class="space-circle">
                     <div class="space-circle">
                         <div class="space-circle">
-    
+
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <form action="#" id="sign-up-form">
             <div class="form-title">Sign up Now !</div>
@@ -35,15 +37,34 @@
                 </div>
 
                 <div id="birth-date-container">
-                    <lable for="bd">Birth Date:  </lable>
+                    <label for="bd">Birth Date: </label>
 
                 </div>
-                
 
             </fieldset>
+
+            <fieldset class="fieldset">
+                <legend>Contact info</legend>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div id="address-container">
+                    <label for="address">Address: </label>
+                    <input type="text" name="address" id="address">
+                </div>
+            </fieldset>
+
+            </fieldset>
+
         </form>
 
     </div>
 
 </body>
+
 </html>
